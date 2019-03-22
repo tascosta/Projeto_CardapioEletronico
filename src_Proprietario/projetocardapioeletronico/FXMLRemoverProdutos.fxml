@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="847.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetocardapioeletronico.FXMLRemoverProdutosController">
+   <children>
+      <AnchorPane prefHeight="45.0" prefWidth="849.0" style="-fx-background-color: #343F4B;">
+         <children>
+            <Label layoutX="359.0" layoutY="12.0" text="Remover Produtos" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ListView layoutX="512.0" layoutY="68.0" prefHeight="431.0" prefWidth="335.0" style="-fx-border-color: #343F4B; -fx-background-color: #FFFFFF;" />
+      <AnchorPane layoutX="512.0" layoutY="46.0" prefHeight="21.0" prefWidth="335.0" style="-fx-border-color: #343F4B; -fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="125.0" layoutY="4.0" text="Produtos Disponíveis" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="69.0" layoutY="61.0" text="Nome:" />
+      <Label layoutX="66.0" layoutY="217.0" text="Descrição:" />
+      <Label layoutX="247.0" layoutY="143.0" text="Tamanho:" />
+      <TextField layoutX="130.0" layoutY="64.0" prefHeight="25.0" prefWidth="283.0" style="-fx-border-color: #343F4B;" />
+      <Label layoutX="67.0" layoutY="174.0" text="Tipo:" />
+      <Label layoutX="67.0" layoutY="135.0" text="Categoria:" />
+      <Label layoutX="247.0" layoutY="174.0" text="Preço:" />
+      <TextField disable="true" layoutX="310.0" layoutY="182.0" prefHeight="25.0" prefWidth="104.0" style="-fx-border-color: #343F4B;" />
+      <TextArea disable="true" layoutX="130.0" layoutY="225.0" prefHeight="100.0" prefWidth="283.0" style="-fx-border-color: #343F4B;" />
+      <BorderPane disable="true" layoutX="132.0" layoutY="340.0" prefHeight="100.0" prefWidth="283.0" style="-fx-border-color: #343F4B;">
+         <center>
+            <ImageView disable="true" fitHeight="95.0" fitWidth="206.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <Button layoutX="207.0" layoutY="460.0" mnemonicParsing="false" style="-fx-background-color: #DF3A01;" text="Remover Produto" textFill="WHITE" />
+      <Label layoutX="66.0" layoutY="332.0" text="Imagem:" />
+      <MenuButton disable="true" layoutX="310.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" style="-fx-border-color: #343F4B; -fx-background-color: #FFFFFF;">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </MenuButton>
+      <MenuButton disable="true" layoutX="131.0" layoutY="182.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" style="-fx-border-color: #343F4B; -fx-background-color: #FFFFFF;">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </MenuButton>
+      <MenuButton disable="true" layoutX="131.0" layoutY="140.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" style="-fx-border-color: #343F4B; -fx-background-color: #FFFFFF;">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </MenuButton>
+      <Button layoutX="238.0" layoutY="95.0" mnemonicParsing="false" text="Pesquisar" />
+   </children>
+</AnchorPane>

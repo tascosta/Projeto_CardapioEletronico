@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="624.0" prefWidth="523.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetocardapioeletronico2.FXMLPagamentoController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="106.0" prefWidth="523.0" style="-fx-background-color: #343F4B;">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="300.0" layoutX="107.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/letraPagamento.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="24.0" layoutY="136.0" text="Forma de Pagamento" textFill="#323c47">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="18.0" fitWidth="491.0" layoutX="17.0" layoutY="162.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@imagens/linha.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="491.0" layoutX="16.0" layoutY="409.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@imagens/linha.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="195.0" layoutY="297.0" text="Dividir Conta?">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="10.0" fitWidth="124.0" layoutX="195.0" layoutY="322.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@imagens/linha.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="23.0" layoutY="427.0" text="Total Compra:" textFill="#252c32">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="464.0" layoutY="427.0" text="0,00" textFill="#f50000">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="427.0" text="R$" textFill="#f50000">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="82.0" fitWidth="270.0" layoutX="122.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/formaPagamento.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtDividirConta" editable="false" layoutX="201.0" layoutY="333.0" onAction="#btnDividirConta" prefHeight="36.0" prefWidth="108.0" visible="false" />
+      <Button fx:id="btnDividirConta" layoutX="195.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnDividirConta" opacity="0.0" prefHeight="30.0" prefWidth="124.0" />
+      <Button fx:id="btnConfirmarPagamento" layoutX="367.0" layoutY="564.0" mnemonicParsing="false" onAction="#btnConfirmarPagamento" prefHeight="37.0" prefWidth="127.0" style="-fx-background-color: #3DB523;" text="Confirmar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnCancelar" layoutX="23.0" layoutY="564.0" mnemonicParsing="false" onAction="#btnCancelar" prefHeight="37.0" prefWidth="127.0" style="-fx-background-color: #969696;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

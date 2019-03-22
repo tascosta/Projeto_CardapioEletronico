@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="173.0" prefWidth="490.0" style="-fx-border-color: #1F1F1F; -fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetocardapioeletronico2.FXMLTelinhaProdutosController">
+   <children>
+      <Label fx:id="lblNomeProduto" layoutX="218.0" layoutY="21.0" text="Título">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescricao" layoutX="223.0" layoutY="56.0" text="Descrição">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblQtd" layoutX="409.0" layoutY="127.0" text="N">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPreco" layoutX="249.0" layoutY="99.0" text="Preço" textFill="#e40b0b">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMais" layoutX="361.0" layoutY="122.0" mnemonicParsing="false" onAction="#btnMais" style="-fx-background-image: imagens\Mais.png; -fx-background-color: #3DB523;" text="+" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMenos" layoutX="432.0" layoutY="121.0" mnemonicParsing="false" onAction="#btnMenos" prefHeight="25.0" prefWidth="37.0" style="-fx-background-color: #CB3022;" text="-" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdicionar" layoutX="223.0" layoutY="126.0" mnemonicParsing="false" onAction="#btnAdicionar" style="-fx-background-color: #F08080;" text="Adicionar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblCifrao" layoutX="226.0" layoutY="99.0" text="R$" textFill="#e40b0b">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView" fitHeight="146.0" fitWidth="181.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

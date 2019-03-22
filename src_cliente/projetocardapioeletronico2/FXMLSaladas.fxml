@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="624.0" prefWidth="523.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetocardapioeletronico2.FXMLSaladasController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="106.0" prefWidth="523.0" style="-fx-background-color: #343F4B;">
+         <children>
+            <ImageView fitHeight="58.0" fitWidth="63.0" layoutX="24.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/seta.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="78.0" layoutX="417.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/menuCarrinho.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="271.0" layoutX="126.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/LetraSaladas.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnCarrinho" layoutX="420.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnCarrinho" opacity="0.0" prefHeight="74.0" prefWidth="74.0" />
+            <Button fx:id="btnSair" layoutX="26.0" layoutY="27.0" mnemonicParsing="false" onAction="#btnSair" opacity="0.0" prefHeight="65.0" prefWidth="63.0" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="paneSalada" layoutY="105.0" prefHeight="519.0" prefWidth="523.0" />
+   </children>
+</AnchorPane>

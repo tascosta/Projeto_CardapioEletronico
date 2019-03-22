@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="624.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetocardapioeletronico2.FXMLAvaliacaoController">
+   <children>
+      <AnchorPane prefHeight="106.0" prefWidth="523.0" style="-fx-background-color: #343F4B;">
+         <children>
+            <ImageView fitHeight="133.0" fitWidth="294.0" layoutX="111.0" layoutY="6.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@imagens/Logo_Talavis.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="98.0" prefHeight="512.0" prefWidth="523.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="179.0" layoutY="11.0" text="AVALIAÇÃO">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="14.0" fitWidth="304.0" layoutX="104.0" layoutY="49.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@imagens/linha.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="100.0" layoutY="60.0" prefHeight="26.0" prefWidth="325.0" text="Em cada seção selecione o nível desejado:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="71.0" fitWidth="141.0" layoutX="80.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/avaliacao.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="94.0" layoutY="107.0" prefHeight="26.0" prefWidth="113.0" text="Atendimento">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="58.0" fitWidth="141.0" layoutX="290.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/avaliacao.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="320.0" layoutY="107.0" prefHeight="26.0" prefWidth="113.0" text="Produtos">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="58.0" fitWidth="141.0" layoutX="82.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/avaliacao.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="115.0" layoutY="220.0" prefHeight="26.0" prefWidth="113.0" text="Serviços">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="329.0" layoutY="220.0" prefHeight="26.0" prefWidth="113.0" text="Ambiente">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="336.0" prefHeight="26.0" prefWidth="168.0" text="Cardápio Eletrônico">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="58.0" fitWidth="141.0" layoutX="292.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/avaliacao.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="141.0" layoutX="192.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/avaliacao.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnEnviarFeedBack" layoutX="367.0" layoutY="454.0" mnemonicParsing="false" onAction="#btnEnviarFeedBack" prefHeight="37.0" prefWidth="127.0" style="-fx-background-color: #3DB523;" text="Enviar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancelar" layoutX="26.0" layoutY="453.0" mnemonicParsing="false" onAction="#btnCancelar" prefHeight="37.0" prefWidth="127.0" style="-fx-background-color: #969696;" text="Cancelar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <Button fx:id="btnAtendimentoRuim" layoutX="74.0" layoutY="138.0" mnemonicParsing="false" onAction="#btnAtendimentoRuim" onDragEntered="#btnAtendimentoRuim" onMouseClicked="#btnAtendimentoRuim" onMouseDragExited="#btnAtendimentoRuim" opacity="0.0" prefHeight="39.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnAtendimentoBom" layoutX="127.0" layoutY="138.0" mnemonicParsing="false" onAction="#bbtnAtendimentoBom" opacity="0.0" prefHeight="39.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnAtendimentoOtimo" layoutX="181.0" layoutY="138.0" mnemonicParsing="false" onAction="#btnAtendimentoOtimo" opacity="0.0" prefHeight="39.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnProdutoRuim" layoutX="277.0" layoutY="139.0" mnemonicParsing="false" onAction="#btnProdutoRuim" opacity="0.0" prefHeight="37.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnProdutoBom" layoutX="334.0" layoutY="140.0" mnemonicParsing="false" onAction="#btnProdutoBom" opacity="0.0" prefHeight="37.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnProdutoOtimo" layoutX="390.0" layoutY="139.0" mnemonicParsing="false" onAction="#btnProdutoOtimo" opacity="0.0" prefHeight="37.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnServicoRuim" layoutX="74.0" layoutY="253.0" mnemonicParsing="false" onAction="#btnServicoRuim" opacity="0.0" prefHeight="39.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnServicoBom" layoutX="127.0" layoutY="253.0" mnemonicParsing="false" onAction="#btnServicoBom" opacity="0.0" prefHeight="39.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnServicoOtimo" layoutX="181.0" layoutY="253.0" mnemonicParsing="false" onAction="#btnServicoOtimo" opacity="0.0" prefHeight="39.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnAmbienteRuim" layoutX="281.0" layoutY="254.0" mnemonicParsing="false" onAction="#btnAmbienteRuim" opacity="0.0" prefHeight="37.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnAmbienteBom" layoutX="334.0" layoutY="253.0" mnemonicParsing="false" onAction="#btnAmbienteBom" opacity="0.0" prefHeight="37.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnAmbienteOtimo" layoutX="390.0" layoutY="253.0" mnemonicParsing="false" onAction="#btnAmbienteOtimo" opacity="0.0" prefHeight="37.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnCardapioEletronicoRuim" layoutX="181.0" layoutY="368.0" mnemonicParsing="false" onAction="#btnCardapioEletronicoRuim" opacity="0.0" prefHeight="37.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnCardapioEletronicoBom" layoutX="237.0" layoutY="368.0" mnemonicParsing="false" onAction="#btnCardapioEletronicoBom" opacity="0.0" prefHeight="37.0" prefWidth="52.0" text="Button" />
+            <Button fx:id="btnCardapioEletronicoOtimo" layoutX="294.0" layoutY="368.0" mnemonicParsing="false" onAction="#btnCardapioEletronicoOtimo" opacity="0.0" prefHeight="37.0" prefWidth="52.0" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

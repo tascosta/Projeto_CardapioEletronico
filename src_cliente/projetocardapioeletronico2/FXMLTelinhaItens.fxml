@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="65.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetocardapioeletronico2.FXMLTelinhaItensController">
+   <children>
+      <Label id="lblnome" fx:id="lblnome" layoutX="14.0" layoutY="29.0" text="Nome Produto">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label id="lblPreco" fx:id="lblPreco" layoutX="234.0" layoutY="29.0" text="Preço">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label id="lblQuantidade" fx:id="lblQuantidade" layoutX="327.0" layoutY="33.0" text="N">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnmais" layoutX="286.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnmais" prefHeight="20.0" prefWidth="26.0" style="-fx-background-color: #3DB523;" text="+" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnmenos" layoutX="346.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnmenos" prefHeight="29.0" prefWidth="36.0" style="-fx-background-color: #CB3022;" text="-" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label id="lblTotalItem" fx:id="lblTotalItem" layoutX="426.0" layoutY="31.0" text="Total Item">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

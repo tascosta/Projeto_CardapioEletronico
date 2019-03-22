@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" prefHeight="499.0" prefWidth="847.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetocardapioeletronico.FXMLAdicionarProdutosController">
+   <children>
+      <AnchorPane prefHeight="45.0" prefWidth="847.0" style="-fx-background-color: #343F4B;">
+         <children>
+            <Label layoutX="355.0" layoutY="12.0" text="Adicionar Produtos" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="69.0" layoutY="78.0" text="Nome:" />
+      <Label layoutX="66.0" layoutY="198.0" text="Descrição:" />
+      <Label layoutX="247.0" layoutY="124.0" text="Tamanho:" />
+      <TextField fx:id="jtxtfld_NomeProduto" layoutX="130.0" layoutY="81.0" prefHeight="25.0" prefWidth="283.0" style="-fx-border-color: #343F4B;" />
+      <Label layoutX="67.0" layoutY="155.0" text="Tipo:" />
+      <Label layoutX="67.0" layoutY="116.0" text="Categoria:" />
+      <Label layoutX="247.0" layoutY="155.0" text="Preço:" />
+      <TextField fx:id="jtxtfld_Preco" layoutX="310.0" layoutY="159.0" prefHeight="25.0" prefWidth="104.0" style="-fx-border-color: #343F4B;" />
+      <TextArea fx:id="jtxtarea_Descricao" layoutX="130.0" layoutY="206.0" prefHeight="100.0" prefWidth="283.0" style="-fx-border-color: #343F4B;" />
+      <ListView layoutX="512.0" layoutY="68.0" prefHeight="431.0" prefWidth="335.0" style="-fx-border-color: #343F4B; -fx-background-color: #FFFFFF;" />
+      <AnchorPane layoutX="512.0" layoutY="46.0" prefHeight="21.0" prefWidth="335.0" style="-fx-border-color: #343F4B; -fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="125.0" layoutY="4.0" text="Produtos Disponíveis" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnAddProduto" layoutX="207.0" layoutY="447.0" mnemonicParsing="false" onAction="#btnAddProduto" style="-fx-background-color: #5FB404;" text="Adicionar Produto" textFill="WHITE" />
+      <Label layoutX="66.0" layoutY="313.0" text="Imagem:" />
+      <Button fx:id="btnBuscar" layoutX="63.0" layoutY="333.0" mnemonicParsing="false" onAction="#btnBuscar" text="Buscar" />
+      <BorderPane layoutX="130.0" layoutY="322.0" prefHeight="100.0" prefWidth="283.0" style="-fx-border-color: #343F4B;">
+         <center>
+            <ImageView fx:id="picFoto" fitHeight="95.0" fitWidth="206.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <ComboBox fx:id="jcbx_Categoria" layoutX="129.0" layoutY="120.0" prefHeight="25.0" prefWidth="104.0" />
+      <ComboBox fx:id="jcbx_Tipo" layoutX="129.0" layoutY="160.0" prefHeight="25.0" prefWidth="104.0" />
+      <ComboBox fx:id="jcbx_Tamanho" layoutX="310.0" layoutY="120.0" prefHeight="25.0" prefWidth="104.0" />
+   </children>
+</AnchorPane>
